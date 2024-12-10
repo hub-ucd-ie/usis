@@ -1,0 +1,360 @@
+/*------------------------------------------------------------------*/
+/* CSS RESET */
+/*------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: top; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1.5; }
+ol, ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+a{text-decoration:none}
+a{-o-transition:.3s;  -ms-transition:.3s;  -moz-transition:.3s;  -webkit-transition:.3s; transition:.3s; }
+a:focus {outline: none;}
+*{padding:0px; margin:0px;}
+body,img {transition:all .2s linear; -o-transition:all .2s linear; -moz-transition:all .2s linear; -webkit-transition:all .2s linear; }
+
+/*------------------------------------------------------------------*/
+/* GENERAL */
+/*------------------------------------------------------------------*/
+#container{margin:0px auto; background:#fff;position:relative}
+#main{padding:18px 30px; min-height:365px; font-size:12px;}
+#main p,p{line-height:1.5em; color:#333; margin:0px;}
+#main form{vertical-align:middle;}
+#main table.plaintable{width:100%; margin-top:0px !important;}
+#main table.graph {border-bottom:none; margin-left:-5px; margin-top:0px;} 
+#main table.plaintable table.graph{border:none; }
+#main table.graph td{padding:0px; border:none;}
+#main table.graph td table td{padding:5px 7px;}
+table.plaintable thead td{background:#ccc; border-bottom:1px solid #a0c4e6;}
+#main table.plaintable table.graph{border:none !important;}
+
+/*------------------------------------------------------------------*/
+/* DASHBOARD */
+/*------------------------------------------------------------------*/
+
+#header{width:100%; z-index:99999; background:#003366;}
+.logo{position:absolute; top:15px; left:10px}
+#dashboard {min-height: 40px; padding-top: 10px; padding-left: 70px}
+#dashboard ul{display: inline; width:100%}
+#dashboard ul li{display:inline; margin-right:3px; font-size:11px; margin-top:5px}
+#dashboard ul li a{padding:5px 8px 5px 24px; color:#fff; border-radius:4px; font-weight:bold; } 
+#dashboard ul li a:hover{color:#fff;}
+#dashboard ul li.infologo{font-size:18px; font-weight:bold; color:#fff; margin-right:20px; position:absolute; top:13px; left:6px;}
+#dashboard ul li a:hover{text-decoration:none;}
+
+/* Icons */
+#dashboard ul li#home a{padding-left:0px;}
+#dashboard ul li#news a{background:url(/infohub3/images/news.png) no-repeat 7px -18px;}
+#dashboard ul li#news a:hover{background:#016fa7 url(/infohub3/images/news.png) no-repeat 7px 6px;}
+#dashboard ul li#tasks a{background:url(/infohub3/images/task.png) no-repeat 6px -18px;}
+#dashboard ul li#tasks a:hover{background:#016fa7 url(/infohub3/images/task.png) no-repeat 6px 7px;}
+#dashboard ul li#favourites a{background:url(/infohub3/images/star.png) no-repeat 7px -18px;}
+#dashboard ul li#favourites a:hover{background:#016fa7 url(/infohub3/images/star.png) no-repeat 7px 6px;}
+#dashboard ul li#help a{background:url(/infohub3/images/flag.png) no-repeat 8px -18px;}
+#dashboard ul li#help a:hover{background:#016fa7 url(/infohub3/images/flag.png) no-repeat 8px 6px;}
+#dashboard ul li#profile a{background:url(/infohub3/images/user.png) no-repeat 6px -18px;}
+#dashboard ul li#profile a:hover{background:#016fa7 url(/infohub3/images/user.png) no-repeat 6px 6px;}
+#dashboard ul li#logout a{background:url(/infohub3/images/logout.png) no-repeat 6px -19px; }
+#dashboard ul li#logout a:hover{background:#016fa7 url(/infohub3/images/logout.png) no-repeat 6px 8px;}
+
+#dashboard span{font-size:11px; padding:2px 6px; background:#0a9c2b; text-align:center; margin-left:2px; border-radius:9px;}
+
+#dashboard .search {display: inline}
+#dashboard .search form {display: inline}
+#dashboard .search input{display:inline; border:none; padding:4px 10px; font-size:11px; color:#444; margin-top:-3px; border-radius:20px;}
+
+/*------------------------------------------------------------------*/
+/* BREADCRUMBS    */
+/*------------------------------------------------------------------*/
+#breadcrumbs{ padding:5px 20px 5px 20px; border-bottom: 1px solid #e2e2e2; overflow:hidden;}
+#breadcrumbs {font-size:11px; color:#888;} 
+#breadcrumbs span{font-size:9px; font-family:Tahoma, Geneva, sans-serif; padding-top:2px;}
+#breadcrumbs a{background:url(/infohub3/images/small_arrow.gif) no-repeat center right; padding-right:12px; padding-left:1px; color:#666;}
+#breadcrumbs a:hover{color:#333; text-decoration:none;}
+#breadcrumbs a:first-child{padding-left:10px;}
+#breadcrumbs h1{margin-top:10px; font-size:26px;  margin-bottom:10px; color:#111; margin-left:10px;}
+
+/*------------------------------------------------------------------*/
+/* BUTTONS  */
+/*------------------------------------------------------------------*/
+
+#buttons{position:absolute; top:20px; right:20px; float:right; padding:8px 10px 18px 2px; background:url(/infohub3/images/grad.gif) repeat-x; border:1px solid #e2e2e2; border-radius:3px}
+#buttons ul li{display:inline; margin-left:9px; border-left:1px solid #ccc; padding-left:10px; line-height:1.4em; display:block; float:left;}
+#buttons ul li:first-child{margin-left:0px; border:none;}
+#buttons ul li a{font-size:12px; color:#003366; text-decoration:none; padding-bottom:1px; padding-top:1px; position:relative; z-index:10;} 
+#buttons ul li a:hover{text-decoration:underline; color:#111;}
+#buttons ul li#print a{background:url(/infohub3/images/printsmall.png) no-repeat 0px 0px; padding-left:24px;}
+#buttons ul li#previous a{background:url(/infohub3/images/prev.gif) no-repeat 0px 4px; padding-left:14px;}
+#buttons ul li#pdf a{background:url(/infohub3/images/pdfsmall.png) no-repeat 0px 0px; padding-left:24px;}
+#buttons ul li#save a{background:url(/infohub3/images/savesmall.png) no-repeat 2px 0px; padding-left:24px;}
+#buttons ul li.button a{font-weight:bold;}
+#buttons ul li INPUT[type=submit]{color:#003366; text-decoration:none; padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:0px; position:relative; z-index:10;font-size:12px;margin:0px;background-color:transparent; border:0px none;}
+#buttons ul li INPUT[type=submit]:hover{text-decoration:underline; color:#111;}
+
+/*------------------------------------------------------------------*/
+/* MODULES */
+/*------------------------------------------------------------------*/
+.module{margin-top:12px; margin-bottom:12px; position:relative; }
+
+@media screen and (min-width: 400px) {
+    .module{border:1px solid #ccc; padding:15px 22px; border-radius:3px; -moz-box-shadow: 0 0 7px #ccc; -webkit-box-shadow: 0 0 7px #ccc; box-shadow: 0 0 7px #ccc; background:url(/infohub3/images/grad.gif) repeat-x top left}
+}
+.module .links{position:absolute; top:46px; right:85px; text-align:right; font-weight:bold;}
+.module .links p{color:#999;}
+.module h2{color:#111;  margin-bottom:16px; font-weight:normal; margin-top:26px; font-size:22px; }
+.module p{color:#444; font-size:12px; margin-bottom:10px;}
+.module table p{margin-bottom:0px !important}
+
+.module table.plaintable{margin-top:30px; margin-bottom:30px; }
+.module a:hover{text-decoration:underline;}
+.module table.plaintable table td{border-left:1px solid #e2e2e2; padding:5px 8px; border-top:1px solid #e2e2e2; line-height:1.4em; font-size:12px; text-align:left;} 
+.module table.plaintable table thead td{background:#ccc; border-bottom:1px solid #a0c4e6; }
+
+.module table p{margin-bottom:0px !important}
+.module p{font-size:12px; margin-bottom:0px;}
+.module p a.pdf{background:url(../images/pdf.png) no-repeat 0px 0px; padding-left:42px; font-size:14px; line-height:32px; display:inline-block; margin-right:40px;}
+.module p a.doc{background:url(../images/doc.png) no-repeat 0px 0px; padding-left:42px; font-size:14px; line-height:32px; display:inline-block; margin-right:40px;}
+.module table#fixedtable{margin-bottom:0px;}
+
+p.querylinks{position:absolute; bottom:12px; right:25px; font-size:11px;margin-bottom:0px;}
+p.querylinks a{color:#DDD; padding-left:10px;padding-right:10px;border-left:1px solid #DDD}
+p.querylinks a:first-child{border-left:0px solid}
+p.querylinks a:HOVER{text-decoration:underline;color:#000}
+p.queryexport{color:#999; margin-top:15px; position:absolute; bottom:0px; left:0px; background:#f2f2f2; font-size:11px;  padding:5px 20px; -webkit-border-top-right-radius: 6px; -moz-border-radius-topright: 6px;border-top-right-radius: 6px; margin-bottom:0px !important} 
+p.queryexport a:HOVER{text-decoration:underline}
+p.queryexport a{padding-left:30px; padding-top:2px; padding-bottom:2px; font-weight:bold; line-height:1.5em;}
+p.queryexport a#excel{background:url(/infohub3/images/excel.png) no-repeat 9px 0px;}
+
+/*------------------------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------------------------*/
+#footer{width:100%;background:#036; padding:15px 30px; font-size:11px; }
+#footer ul{color:#999; margin-bottom:0px;float:left }
+#footer ul a{color:#fff;}
+#footer ul li{padding-right: 10px;display:inline; margin-right:3px}
+
+/*------------------------------------------------------------------*/
+/* IE6 MESSAGE */
+/*------------------------------------------------------------------*/
+#ie-message {background:#C00; text-align:center; border-bottom:1px solid #900; color: #fff; position:absolute; top:0; padding:30px 5px; width:100%; font-size:18px; z-index:999999999;}
+#ie-message a {color: #fff; }
+
+/*------------------------------------------------------------------*/
+/* CYCLER */
+/*------------------------------------------------------------------*/
+
+#cycle-fullwidth {width:100%; height:300px; position:relative; overflow:hidden; background:url(/infohub3/images/fullwidth-cycle-bg.png) top left repeat-x; margin-top:0px; margin-bottom:5px;}
+#cycle-fullwidth .inner {width:95%; margin:0 auto; position:relative; }
+#cycle-fullwidth .inner h2{background:#fff; color:#111; font-size:28px; padding:10px 14px;   line-height:1.5em; display:inline; }
+#cycle-fullwidth .inner span.text{top:100px; left:0px; width:400px; position:absolute; z-index:9999;}
+#cycle-fullwidth .inner span.copy{color:white; background:#296eb3;  font-size:12px; line-height:1.5em; display:block; padding:10px 15px; margin-top:5px;} 
+#cycle-fullwidth .slide {width:100%; background:url(/infohub3/images/fullwidth-cycle-bg.png) top left repeat-x;}
+#cycle-fullwidth a {color:#fff}
+#cycle-fullwidth .slide img {display:block; width:95%; height:300px; border:none; color:#fff; text-decoration:none;}
+#cycle-fullwidth .inner-shdw-bottom {width:100%; position:absolute; bottom:0; height:25px; z-index:10; background:url(/infohub3/images/fullwidth-cycle-bottom.png) bottom left repeat-x; }
+#cycle-fullwidth .inner-shdw-top {width:100%; position:absolute; top:0; height:13px; z-index:10; background:url(/infohub3/images/fullwidth-cycle-top.png) top left repeat-x; }
+#cycle-pager {position:absolute; bottom:10px; left:46%; z-index:100; }
+#cycle-pager a {display:block; float:left; padding:5px; outline:none}
+#cycle-pager span {text-indent:-2000em; display:block; width:14px; height:14px; -moz-box-shadow:inset 0 2px 3px rgba(0,0,0,0.5); -webkit-box-shadow:inset 0 2px 3px rgba(0,0,0,0.75); box-shadow:inset 0 2px 3px rgba(0,0,0,0.75); background:#fff; background:rgba(255,255,255,0.65); -webkit-border-radius:7px; -moz-border-radius:7px; border-radius:7px; }
+#cycle-pager a:hover span {background:#ffcf00; }
+#cycle-pager a.activeSlide span, #cycle-pager a:active span {background:#412f13; background:rgba(0,0,0,0.75); -moz-box-shadow:0 0 3px rgba(255,255,255,0.5); -webkit-box-shadow:0 0 3px rgba(255,255,255,0.75); 
+    box-shadow:0 0 3px rgba(255,255,255,0.75); }
+
+#cycle-next, #cycle-prev {z-index:100; display:block; position:absolute; width:18px; height:36px; outline:none; cursor:pointer; top:132px; background-image:url(/infohub3/images/cycle-next-prev.png);}
+#cycle-next {right:30px; background-position:0 0; }
+#cycle-next:hover, #cycle-next:active {background-position:0 -36px; }
+#cycle-prev {left:30px; background-position:0 -72px; }
+#cycle-prev:hover, #cycle-prev:active {background-position:0 -108px;}
+
+/*------------------------------*/
+/*   FEEDBACK                   */
+/*------------------------------*/
+#feedback {margin-top: 20px;background-color:#EEE; padding:10px;}
+#feedback h4 {font-style:bold}
+#feedback input {margin-right:10px;margin-top:5px}
+#feedback td {padding-right:20px;}
+
+/*------------------------------------------------------------------*/
+/* INFOHUB MENUS */
+/*------------------------------------------------------------------*/
+td#menu {padding-left:5px;line-height:1.2}
+span#menudesc {font-size:10px; color:#666; font-style:italic; margin-bottom:5px}
+a#menufav {font-size:12px; color:#666; font-style:normal; margin-left:5px; margin-bottom:5px;}
+a#menuheader {font-size:20px; color:#222; text-decoration:none; margin-top:5px;} 
+a#menuheader:HOVER {text-decoration:underline}
+
+TABLE.menuplaintable {width: 95%;}
+TABLE.menuplaintable TR {height:60px;}
+TABLE.menuplaintable TR:HOVER {background-color:#EEEEEE;}
+TABLE.menuplaintable TD {vertical-align: middle;}
+
+/*------------------------------------------------------------------*/
+/* TABLE OF CONTENTS DROPDOWN */
+/*------------------------------------------------------------------*/
+
+.anchormenu{float:right;}
+.anchormenu ul{list-style-type:none; padding:0; margin:0;}
+.anchormenu li{float:left; position:relative; z-index:1; }
+.anchormenu table{position:absolute; border-collapse:collapse; z-index:80; left:-1px; top:25px; }
+.anchormenu a, .anchormenu :visited {display:block; width:189px; font-size:11px; padding:7px 10px; line-height:1.3em; color:#000; background:#e2e2e2; text-decoration:none !important; }
+.anchormenu a:hover{color:#000;}
+.anchormenu :hover{color:#000; background-color:#ccc; }
+.anchormenu ul li a span{color:#000; text-transform:uppercase; background:url(../images/quicklink.png) no-repeat center right; display:block;}
+.anchormenu ul ul {visibility:hidden; position:absolute; width:149px; height:0; }
+.anchormenu ul li:hover ul, .anchormenu ul a:hover ul{visibility:visible;}
+
+/*------------------------------------------------------------------*/
+/* TABLES */
+/*------------------------------------------------------------------*/
+
+TABLE TH, TABLE TD {vertical-align: top;}
+
+TABLE TD.delabel, TABLE TH.delabel {font-weight: bold}
+
+TABLE TD.dewhite {font-style: italic}
+
+TABLE TD.dddefault, TABLE.datadisplaytable TD {padding: 5px; border-top: 0px solid #8bd9e6;border-left: 1px solid #8bd9e6;}
+
+table.datadisplaytable td{border-bottom:none !important;}
+table.datadisplaytable th{border-top:none !important;}
+
+table.datadisplaytable td{vertical-align:top; background:#fff; border-color:#ccc; border-top:none;  border-right:none; padding-left:10px; padding-right:10px;}
+table.datadisplaytable td:first-child{border-left:none;}
+table.datadisplaytable td p{margin-bottom:0px; font-size:12px;}
+table.datadisplaytable th{background:#428bca;  color:#FFFFFF; font-weight:bold; font-size:12px; padding:5px; border-bottom:1px solid #AAA; border-left:1px solid #AAA}
+table.datadisplaytable td p a{text-decoration:none; font-weight:bold;}
+table.datadisplaytable td a:hover{text-decoration:underline;}
+table.datadisplaytable tr.even td{background:#f2f2f2;}
+table.datadisplaytable tfoot th, table.datadisplaytable tfoot td
+   {background:#DDD !important; color: #000000 !important; border-top:2px solid #008dd0 !important;}
+
+th.centeraligntext, .centeraligntext {text-align: center;}
+.leftaligntext {text-align: left;}
+.rightaligntext {text-align: right;}
+
+/*------------------------------------------------------------------*/
+/* TABLE COLOURS */
+/*------------------------------------------------------------------*/
+.header0{border-bottom:4px solid #428bca !important;}
+.header1{border-bottom:4px solid #0785cd !important;}
+.header2{border-bottom:4px solid #80da00 !important;}
+.header3{border-bottom:4px solid #f4cf01 !important;}
+.header5{border-bottom:4px solid #F00 !important;}
+/*------------------------------------------------------------------*/
+/* FORM CONTROLS */
+/*------------------------------------------------------------------*/
+INPUT {position:relative; top:-3px;}
+
+#main a.menubutton, .menubutton, .menubutton:link, .menubutton:visited, INPUT[type=submit],INPUT[type=reset],input.button {
+text-align: center;
+color:white;
+font-weight: normal;
+background-color:#008dd0;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 8px;
+padding-right: 8px;
+position:relative;
+cursor:pointer;
+top :-2px;
+border:none;
+margin-top:10px;
+border-radius:3px; 
+margin-bottom:10px;
+overflow:visible;}
+
+#main a.menubutton:hover, .menubutton:hover, INPUT[type=button]:hover, INPUT[type=submit]:hover,INPUT[type=reset]:hover,input.button:hover,input.buttonover 
+   {background-color: #01a144;text-decoration:none;}
+
+INPUT[disabled=disabled]{color:gray;}
+
+TEXTAREA {position:relative; top:-2px;}
+
+/*------------------------------------------------------------------*/
+/* DATA ENTRY TABLE */
+/*------------------------------------------------------------------*/
+table.dataentrytable{width:100%}
+table.dataentrytable tr{border-top:1px solid #e2e2e2}
+table.dataentrytable tr:first-child{border-top:0px solid #e2e2e2}
+table.dataentrytable td{padding:6px 10px 4px 0px;  vertical-align:top;}
+table.dataentrytable td input{padding:3px; margin-top:4px; border:1px solid #c9c9c9; border-bottom-color:#e2e2e2; border-top-color:#949494;}
+table.dataentrytable td select{padding:2px; margin-top:0px; margin-bottom:2px;}
+table.dataentrytable td textarea{padding:5px; margin-top:4px;  border:1px solid #c9c9c9; border-bottom-color:#e2e2e2; border-top-color:#949494; font-family:Arial, Helvetica, sans-serif; margin-bottom:3px;}
+table.dataentrytable td span.hint{font-size:11px; color:#888; margin-left:5px; }
+.charleft{font-size:11px; color:#888; padding-left:0px;  display:block; float:left;} table.dataentrytable td .charleft input{padding:2px; }
+table.dataentrytable td input.menubutton{color:#fff; background:#0089cf; cursor:pointer; font-weight:normal; font-size:11px; margin-left:8px; border:none; padding:4px 6px; overflow: visible !important;}
+table.dataentrytable td input.menubutton:hover{background: #01a144;}
+.fieldrequiredtext{color:red; padding-left:2px;}
+
+table.dataentrytable td div.speckToolbar input{margin-top:-1px; border:0px}
+table.dataentrytable td input[type=radio] {margin-left: 5px; margin-right: 10px}
+
+/*------------------------------------------------------------------*/
+/* BOOTSTRAP OVERRIDES */
+/*------------------------------------------------------------------*/
+#header .navbar-default {background-color: #296eb3; border-color: transparent}
+#header .navbar-default .navbar-nav>li>a {color: white}
+#header .navbar-default .navbar-nav>li>a:hover {background-color:#0d5ba9;color: white}
+#header .navbar {border-radius: 0px;margin-left : 60px}
+#header .navbar-collapse {padding-left: 0px}
+#header .container-fluid {padding-left: 0px}
+#header .navbar-collapse.collapse.in {margin-left: 0px}
+#header .navbar-default .navbar-nav>.open>a {background-color: #0D5BA9;color: white}
+#header .navbar-default .navbar-toggle .icon-bar {background-color: #fff}
+#header  .navbar-collapse.collapse.in  .dropdown-menu>li>a {color: #fff;}
+
+#container .navbar {position: absolute;top: 10px; right: 0px; border-radius: 10px}
+#container .navbar-default {background-color: transparent; border-color: transparent}
+#container .navbar-collapse.collapse.in {background-color: #EEEEEE;z-index: 999999}
+#container .navbar input[type=submit] {background-color: transparent; border-color: transparent; color: #777; padding-top: 15px; padding-bottom:15px; line-height:20px}
+#container h3 {color: #008dd0; font-size:  16pt }
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: white;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+#container .panel-default>.panel-heading {background-color: #428bca; color: white; border-radius: 0px}
+
+#container .panel {margin-bottom: 10px}
+
+/*------------------------------------------------------------------*/
+/* DATA LISTS */
+/*------------------------------------------------------------------*/
+dl.numlist {counter-reset: my-counter;}
+dl.numlist dt {position: relative; font: bold 16px arial; color: #296eb3}
+dl.numlist dt:before {content: counter(my-counter); counter-increment: my-counter; position: absolute; left: 0; top: 0; font: bold 50px arial; background-color:#296eb3; color: white; padding: 5px}
+dl.numlist dd {margin: 0 0 20px 0;}
+dl.numlist dt, dl.numlist dd {padding-left: 50px;}
+
+span.green    {padding:2px 6px; color:#fff;background:#0a9c2b; text-align:center; border-radius:9px; line-height:16px}
+span.blue       {padding:2px 6px; color:#fff;background:#296eb3; text-align:center; border-radius:9px; line-height:16px}
+span.crimson{padding:2px 6px; color:#fff;background:#DC143C; text-align:center; border-radius:9px; line-height:16px}
+span.orange  {padding:2px 6px; color:#fff;background:#FFA500; text-align:center; border-radius:9px; line-height:16px}
+span.indigo   {padding:2px 6px; color:#fff;background:#7B68EE; text-align:center; border-radius:9px; line-height:16px}
+span.cyan   {padding:2px 6px; color:#fff;background:#00FFFF; text-align:center; border-radius:9px; line-height:16px}
+
+@-ms-viewport{
+    width: device-width;
+}
+
+#pagebar {margin-bottom: 20px}
+
+@media print {
+#header {display: none}
+#footer {display: none}
+  a[href]:after {
+    content: none !important;
+  }
+}
+
